@@ -1,17 +1,16 @@
 
 <template>
-  <div>
-    <h1>ciao mondo</h1>
-  </div>
-  <AppMain />
+  <AppHeader />
+  <router-view></router-view>
 </template>
 
 
 <script>
-import AppMain from './components/AppMain.vue';
+import AppHeader from './components/AppHeader.vue';
+
   export default {
     components: {
-      AppMain
+      AppHeader
     }
   }
 </script>
